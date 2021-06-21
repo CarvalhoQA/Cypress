@@ -9,7 +9,8 @@ describe('Endpoint Location Rick and Morty', () => {
             expect(response.body.data.location.dimension).to.eq("unknown");
             expect(response.body.data.location.dimension).to.eq("unknown");
             expect(response.body.data.location.created).to.eq("2017-11-10T13:06:38.182Z");
-            expect(response.body.data.location.residents).to.not.be.null;
+            expect(response.body.data.location.residents[0].id).to.eq("6");
+            expect(response.body.data.location.residents[0].name).to.eq("Abadango Cluster Princess");
         });
     });
 });

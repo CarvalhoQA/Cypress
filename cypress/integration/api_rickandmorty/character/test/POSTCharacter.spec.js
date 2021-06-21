@@ -11,7 +11,9 @@ describe('Endpoint Character Rick and Morty', () => {
             expect(response.body.data.character.image).to.eq("https://rickandmortyapi.com/api/character/avatar/1.jpeg");
             expect(response.body.data.character.type).to.eq("");
             expect(response.body.data.character.origin).to.not.be.null;
-            expect(response.body.data.character.location).to.not.be.null;
+            expect(response.body.data.character.location.id).to.eq("20");
+            expect(response.body.data.character.location.name).to.eq("Earth (Replacement Dimension)");
+            expect(response.body.data.character.location.type).to.eq("Planet");
             expect(response.body.data.character.episode).to.not.be.null;
         });
     });
