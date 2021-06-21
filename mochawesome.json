@@ -1,0 +1,470 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-21T05:39:51.213Z",
+    "end": "2021-06-21T05:40:39.437Z",
+    "duration": 6384,
+    "testsRegistered": 12,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4bd3b68b-c8a1-49dd-ac24-dc2c270d3f1d",
+      "title": "",
+      "fullFile": "cypress/integration/api_rickandmorty/character/test/POSTCharacter.spec.js",
+      "file": "cypress/integration/api_rickandmorty/character/test/POSTCharacter.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a81ed373-2075-40c7-b3c5-bbc21eef7dfe",
+          "title": "Endpoint Character Rick and Morty",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Listar Personagens Por ID",
+              "fullTitle": "Endpoint Character Rick and Morty Listar Personagens Por ID",
+              "timedOut": null,
+              "duration": 878,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "character.character().should(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.character.name).to.eq(\"Rick Sanchez\");\n  expect(response.body.data.character.status).to.eq(\"Alive\");\n  expect(response.body.data.character.species).to.eq(\"Human\");\n  expect(response.body.data.character.gender).to.eq(\"Male\");\n  expect(response.body.data.character.image).to.eq(\"https://rickandmortyapi.com/api/character/avatar/1.jpeg\");\n  expect(response.body.data.character.type).to.eq(\"\");\n  expect(response.body.data.character.origin).to.not.be.null;\n  expect(response.body.data.character.location.id).to.eq(\"20\");\n  expect(response.body.data.character.location.name).to.eq(\"Earth (Replacement Dimension)\");\n  expect(response.body.data.character.location.type).to.eq(\"Planet\");\n  expect(response.body.data.character.episode).to.not.be.null;\n});",
+              "err": {},
+              "uuid": "900c2fff-83df-434c-b6ac-24ad6cd97adc",
+              "parentUUID": "a81ed373-2075-40c7-b3c5-bbc21eef7dfe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "900c2fff-83df-434c-b6ac-24ad6cd97adc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 878,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5e1e7941-5eaf-49d3-9ea7-9ef00a622ff6",
+      "title": "",
+      "fullFile": "cypress/integration/api_rickandmorty/episodes/test/POSTEpisodes.spec.js",
+      "file": "cypress/integration/api_rickandmorty/episodes/test/POSTEpisodes.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2ebc285f-8e7a-41f3-b178-816ed56a8f50",
+          "title": "Endpoint Episodes Rick and Morty",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Listar Episódios Por ID",
+              "fullTitle": "Endpoint Episodes Rick and Morty Listar Episódios Por ID",
+              "timedOut": null,
+              "duration": 423,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "episode.episode().should(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.episode.id).to.eq(\"1\");\n  expect(response.body.data.episode.name).to.eq(\"Pilot\");\n  expect(response.body.data.episode.air_date).to.eq(\"December 2, 2013\");\n  expect(response.body.data.episode.episode).to.eq(\"S01E01\");\n  expect(response.body.data.episode.created).to.eq(\"2017-11-10T12:56:33.798Z\");\n  expect(response.body.data.episode.characters).to.not.be.null;\n});",
+              "err": {},
+              "uuid": "3719dfa0-bc1f-4bdf-9c0f-eda26779692b",
+              "parentUUID": "2ebc285f-8e7a-41f3-b178-816ed56a8f50",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3719dfa0-bc1f-4bdf-9c0f-eda26779692b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 423,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "39dab9f7-90ab-4400-9e7e-32a19570da95",
+      "title": "",
+      "fullFile": "cypress/integration/api_rickandmorty/location/test/POSTLocation.spec.js",
+      "file": "cypress/integration/api_rickandmorty/location/test/POSTLocation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "db2545ea-426a-4914-9a8c-645374b185a0",
+          "title": "Endpoint Location Rick and Morty",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Listar Localidades Por ID",
+              "fullTitle": "Endpoint Location Rick and Morty Listar Localidades Por ID",
+              "timedOut": null,
+              "duration": 653,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "location.location().should(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.location.id).to.eq(\"2\");\n  expect(response.body.data.location.name).to.eq(\"Abadango\");\n  expect(response.body.data.location.dimension).to.eq(\"unknown\");\n  expect(response.body.data.location.dimension).to.eq(\"unknown\");\n  expect(response.body.data.location.created).to.eq(\"2017-11-10T13:06:38.182Z\");\n  expect(response.body.data.location.residents[0].id).to.eq(\"6\");\n  expect(response.body.data.location.residents[0].name).to.eq(\"Abadango Cluster Princess\");\n});",
+              "err": {},
+              "uuid": "72922d8a-268a-418d-a0d2-7981415e77ca",
+              "parentUUID": "db2545ea-426a-4914-9a8c-645374b185a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "72922d8a-268a-418d-a0d2-7981415e77ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 653,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3c61a7fc-3612-4c6a-bd43-35a42067f3a4",
+      "title": "",
+      "fullFile": "cypress/integration/api_spacex/users/test/Users.request.spec.js",
+      "file": "cypress/integration/api_spacex/users/test/Users.request.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+          "title": "Endpoint Users SpaceX",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Inserir Usuário",
+              "fullTitle": "Endpoint Users SpaceX Inserir Usuário",
+              "timedOut": null,
+              "duration": 708,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  url: 'https://api.spacex.land/graphql/',\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    query: _queries.insert_users\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.insert_users.affected_rows).to.eq(1);\n  expect(response.body.data.insert_users.returning[0].id).to.eq(\"82214492-f4b7-44e2-9bbc-4af09a81b57b\");\n  expect(response.body.data.insert_users.returning[0].name).to.eq(\"Nome 003\");\n  expect(response.body.data.insert_users.returning[0].rocket).to.eq(\"Foguete 003\");\n  expect(response.body.data.insert_users.returning[0].timestamp).to.is.not.null;\n  expect(response.body.data.insert_users.returning[0].twitter).to.eq(\"@N003\");\n});",
+              "err": {},
+              "uuid": "57c9285c-5b7f-439f-abcf-32d6170e2603",
+              "parentUUID": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Consultar Usuário por ID",
+              "fullTitle": "Endpoint Users SpaceX Consultar Usuário por ID",
+              "timedOut": null,
+              "duration": 197,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  url: 'https://api.spacex.land/graphql/',\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    query: _queries.query_users\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.users[0].id).to.eq(\"82214492-f4b7-44e2-9bbc-4af09a81b57b\");\n  expect(response.body.data.users[0].name).to.eq(\"Nome 003\");\n  expect(response.body.data.users[0].rocket).to.eq(\"Foguete 003\");\n  expect(response.body.data.users[0].timestamp).to.is.not.null;\n  expect(response.body.data.users[0].twitter).to.eq(\"@N003\");\n});",
+              "err": {},
+              "uuid": "f8f28425-cc6a-49ae-a6fd-075bca078a35",
+              "parentUUID": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alterar Usuário",
+              "fullTitle": "Endpoint Users SpaceX Alterar Usuário",
+              "timedOut": null,
+              "duration": 199,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  url: 'https://api.spacex.land/graphql/',\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    query: _queries.update_users\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.update_users.affected_rows).to.eq(1);\n  expect(response.body.data.update_users.returning[0].id).to.eq(\"77777774-f4b7-44e2-9bbc-4af09a81b57b\");\n  expect(response.body.data.update_users.returning[0].name).to.eq(\"Nome 006ALT\");\n  expect(response.body.data.update_users.returning[0].rocket).to.eq(\"Foguete 006ALT\");\n  expect(response.body.data.update_users.returning[0].timestamp).to.is.not.null;\n  expect(response.body.data.update_users.returning[0].twitter).to.eq(\"@N006ALT\");\n});",
+              "err": {},
+              "uuid": "3058756d-e475-4d07-8779-4909893e7b5e",
+              "parentUUID": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Excluir Usuário",
+              "fullTitle": "Endpoint Users SpaceX Excluir Usuário",
+              "timedOut": null,
+              "duration": 214,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  url: 'https://api.spacex.land/graphql/',\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    query: _queries.delete_users\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.delete_users.affected_rows).to.eq(1);\n  expect(response.body.data.delete_users.returning[0].id).to.eq(\"77777774-f4b7-44e2-9bbc-4af09a81b57b\");\n  expect(response.body.data.delete_users.returning[0].name).to.eq(\"Nome 006ALT\");\n  expect(response.body.data.delete_users.returning[0].rocket).to.eq(\"Foguete 006ALT\");\n  expect(response.body.data.delete_users.returning[0].twitter).to.eq(\"@N006ALT\");\n});",
+              "err": {},
+              "uuid": "89370f7c-d731-42d8-ac2e-6824ce5e1754",
+              "parentUUID": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "57c9285c-5b7f-439f-abcf-32d6170e2603",
+            "f8f28425-cc6a-49ae-a6fd-075bca078a35",
+            "3058756d-e475-4d07-8779-4909893e7b5e",
+            "89370f7c-d731-42d8-ac2e-6824ce5e1754"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1318,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "87cfa848-bd21-448b-b67f-6cd5f9cabe45",
+      "title": "",
+      "fullFile": "cypress/integration/to-do-list-componet/to-do-list-page.spec.js",
+      "file": "cypress/integration/to-do-list-componet/to-do-list-page.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9cc0665d-d486-485e-a5af-91264ad8a741",
+          "title": " Teste To-do-list",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastrar itens na lista;",
+              "fullTitle": " Teste To-do-list Cadastrar itens na lista;",
+              "timedOut": null,
+              "duration": 2478,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('[data-reactid=\".0.0.1\"]').type('tarefa 1 {enter}').type('tarefa 2 {enter}').type('tarefa 3 {enter}').type('tarefa 4 {enter}').type('tarefa 5 {enter}').type('tarefa 6 {enter}'); //validar  \ncy.get('.todo-list li').should('have.length', 6);",
+              "err": {},
+              "uuid": "1cfb204e-059c-4679-9610-6a4af1d2b96b",
+              "parentUUID": "9cc0665d-d486-485e-a5af-91264ad8a741",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Marcar 1 item como completo;",
+              "fullTitle": " Teste To-do-list Marcar 1 item como completo;",
+              "timedOut": null,
+              "duration": 146,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('tarefa 1').parent().find('input[type=checkbox]').check();\ncy.contains('tarefa 1').parents('li').should('have.class', 'completed');",
+              "err": {},
+              "uuid": "1f0eae97-cccc-4c52-8979-51918c4239c9",
+              "parentUUID": "9cc0665d-d486-485e-a5af-91264ad8a741",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Excluir itens da lista;",
+              "fullTitle": " Teste To-do-list Excluir itens da lista;",
+              "timedOut": null,
+              "duration": 157,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('tarefa 2').parent().find('.destroy').click({\n  force: true\n});\ncy.contains('tarefa 3').parent().find('.destroy').click({\n  force: true\n});\ncy.get('.todo-list li').should('have.length', 4);",
+              "err": {},
+              "uuid": "d802b266-31d2-4605-84e4-e45017d749a0",
+              "parentUUID": "9cc0665d-d486-485e-a5af-91264ad8a741",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Selecionar o filtro ‘Completed’;",
+              "fullTitle": " Teste To-do-list Selecionar o filtro ‘Completed’;",
+              "timedOut": null,
+              "duration": 107,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Completed').click();\ncy.get('.todo-list li').should('have.length', 1);",
+              "err": {},
+              "uuid": "ddf2d057-d42d-4ed2-810e-b81dbd533ee8",
+              "parentUUID": "9cc0665d-d486-485e-a5af-91264ad8a741",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Estando com o filtro ‘All’ ativo clicar em ‘Clear completed’;",
+              "fullTitle": " Teste To-do-list Estando com o filtro ‘All’ ativo clicar em ‘Clear completed’;",
+              "timedOut": null,
+              "duration": 224,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('All').click();\ncy.contains('Clear completed').click();\ncy.get('.todo-list li').should('have.length', 3);",
+              "err": {},
+              "uuid": "0602c422-c1ba-48ba-9fab-be3f8821db2d",
+              "parentUUID": "9cc0665d-d486-485e-a5af-91264ad8a741",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1cfb204e-059c-4679-9610-6a4af1d2b96b",
+            "1f0eae97-cccc-4c52-8979-51918c4239c9",
+            "d802b266-31d2-4605-84e4-e45017d749a0",
+            "ddf2d057-d42d-4ed2-810e-b81dbd533ee8",
+            "0602c422-c1ba-48ba-9fab-be3f8821db2d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3112,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

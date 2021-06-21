@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-21T05:40:11.211Z",
+    "end": "2021-06-21T05:40:11.673Z",
+    "duration": 462,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5e1e7941-5eaf-49d3-9ea7-9ef00a622ff6",
+      "title": "",
+      "fullFile": "cypress/integration/api_rickandmorty/episodes/test/POSTEpisodes.spec.js",
+      "file": "cypress/integration/api_rickandmorty/episodes/test/POSTEpisodes.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2ebc285f-8e7a-41f3-b178-816ed56a8f50",
+          "title": "Endpoint Episodes Rick and Morty",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Listar Episódios Por ID",
+              "fullTitle": "Endpoint Episodes Rick and Morty Listar Episódios Por ID",
+              "timedOut": null,
+              "duration": 423,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "episode.episode().should(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.episode.id).to.eq(\"1\");\n  expect(response.body.data.episode.name).to.eq(\"Pilot\");\n  expect(response.body.data.episode.air_date).to.eq(\"December 2, 2013\");\n  expect(response.body.data.episode.episode).to.eq(\"S01E01\");\n  expect(response.body.data.episode.created).to.eq(\"2017-11-10T12:56:33.798Z\");\n  expect(response.body.data.episode.characters).to.not.be.null;\n});",
+              "err": {},
+              "uuid": "3719dfa0-bc1f-4bdf-9c0f-eda26779692b",
+              "parentUUID": "2ebc285f-8e7a-41f3-b178-816ed56a8f50",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3719dfa0-bc1f-4bdf-9c0f-eda26779692b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 423,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

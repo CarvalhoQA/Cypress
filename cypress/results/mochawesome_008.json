@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-21T05:40:22.578Z",
+    "end": "2021-06-21T05:40:23.277Z",
+    "duration": 699,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "39dab9f7-90ab-4400-9e7e-32a19570da95",
+      "title": "",
+      "fullFile": "cypress/integration/api_rickandmorty/location/test/POSTLocation.spec.js",
+      "file": "cypress/integration/api_rickandmorty/location/test/POSTLocation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "db2545ea-426a-4914-9a8c-645374b185a0",
+          "title": "Endpoint Location Rick and Morty",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Listar Localidades Por ID",
+              "fullTitle": "Endpoint Location Rick and Morty Listar Localidades Por ID",
+              "timedOut": null,
+              "duration": 653,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "location.location().should(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.location.id).to.eq(\"2\");\n  expect(response.body.data.location.name).to.eq(\"Abadango\");\n  expect(response.body.data.location.dimension).to.eq(\"unknown\");\n  expect(response.body.data.location.dimension).to.eq(\"unknown\");\n  expect(response.body.data.location.created).to.eq(\"2017-11-10T13:06:38.182Z\");\n  expect(response.body.data.location.residents[0].id).to.eq(\"6\");\n  expect(response.body.data.location.residents[0].name).to.eq(\"Abadango Cluster Princess\");\n});",
+              "err": {},
+              "uuid": "72922d8a-268a-418d-a0d2-7981415e77ca",
+              "parentUUID": "db2545ea-426a-4914-9a8c-645374b185a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "72922d8a-268a-418d-a0d2-7981415e77ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 653,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

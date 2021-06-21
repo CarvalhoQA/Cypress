@@ -1,3 +1,12 @@
 {
-    "baseUrl": "https://todomvc.com/examples/typescript-react/#/"
+    "baseUrl": "https://todomvc.com/examples/typescript-react/#/",
+
+
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
 }

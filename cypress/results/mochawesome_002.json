@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-21T05:39:59.001Z",
+    "end": "2021-06-21T05:39:59.926Z",
+    "duration": 925,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4bd3b68b-c8a1-49dd-ac24-dc2c270d3f1d",
+      "title": "",
+      "fullFile": "cypress/integration/api_rickandmorty/character/test/POSTCharacter.spec.js",
+      "file": "cypress/integration/api_rickandmorty/character/test/POSTCharacter.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a81ed373-2075-40c7-b3c5-bbc21eef7dfe",
+          "title": "Endpoint Character Rick and Morty",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Listar Personagens Por ID",
+              "fullTitle": "Endpoint Character Rick and Morty Listar Personagens Por ID",
+              "timedOut": null,
+              "duration": 878,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "character.character().should(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.character.name).to.eq(\"Rick Sanchez\");\n  expect(response.body.data.character.status).to.eq(\"Alive\");\n  expect(response.body.data.character.species).to.eq(\"Human\");\n  expect(response.body.data.character.gender).to.eq(\"Male\");\n  expect(response.body.data.character.image).to.eq(\"https://rickandmortyapi.com/api/character/avatar/1.jpeg\");\n  expect(response.body.data.character.type).to.eq(\"\");\n  expect(response.body.data.character.origin).to.not.be.null;\n  expect(response.body.data.character.location.id).to.eq(\"20\");\n  expect(response.body.data.character.location.name).to.eq(\"Earth (Replacement Dimension)\");\n  expect(response.body.data.character.location.type).to.eq(\"Planet\");\n  expect(response.body.data.character.episode).to.not.be.null;\n});",
+              "err": {},
+              "uuid": "900c2fff-83df-434c-b6ac-24ad6cd97adc",
+              "parentUUID": "a81ed373-2075-40c7-b3c5-bbc21eef7dfe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "900c2fff-83df-434c-b6ac-24ad6cd97adc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 878,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

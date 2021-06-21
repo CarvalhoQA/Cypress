@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-21T05:40:30.872Z",
+    "end": "2021-06-21T05:40:32.238Z",
+    "duration": 1366,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3c61a7fc-3612-4c6a-bd43-35a42067f3a4",
+      "title": "",
+      "fullFile": "cypress/integration/api_spacex/users/test/Users.request.spec.js",
+      "file": "cypress/integration/api_spacex/users/test/Users.request.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+          "title": "Endpoint Users SpaceX",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Inserir Usuário",
+              "fullTitle": "Endpoint Users SpaceX Inserir Usuário",
+              "timedOut": null,
+              "duration": 708,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  url: 'https://api.spacex.land/graphql/',\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    query: _queries.insert_users\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.insert_users.affected_rows).to.eq(1);\n  expect(response.body.data.insert_users.returning[0].id).to.eq(\"82214492-f4b7-44e2-9bbc-4af09a81b57b\");\n  expect(response.body.data.insert_users.returning[0].name).to.eq(\"Nome 003\");\n  expect(response.body.data.insert_users.returning[0].rocket).to.eq(\"Foguete 003\");\n  expect(response.body.data.insert_users.returning[0].timestamp).to.is.not.null;\n  expect(response.body.data.insert_users.returning[0].twitter).to.eq(\"@N003\");\n});",
+              "err": {},
+              "uuid": "57c9285c-5b7f-439f-abcf-32d6170e2603",
+              "parentUUID": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Consultar Usuário por ID",
+              "fullTitle": "Endpoint Users SpaceX Consultar Usuário por ID",
+              "timedOut": null,
+              "duration": 197,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  url: 'https://api.spacex.land/graphql/',\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    query: _queries.query_users\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.users[0].id).to.eq(\"82214492-f4b7-44e2-9bbc-4af09a81b57b\");\n  expect(response.body.data.users[0].name).to.eq(\"Nome 003\");\n  expect(response.body.data.users[0].rocket).to.eq(\"Foguete 003\");\n  expect(response.body.data.users[0].timestamp).to.is.not.null;\n  expect(response.body.data.users[0].twitter).to.eq(\"@N003\");\n});",
+              "err": {},
+              "uuid": "f8f28425-cc6a-49ae-a6fd-075bca078a35",
+              "parentUUID": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alterar Usuário",
+              "fullTitle": "Endpoint Users SpaceX Alterar Usuário",
+              "timedOut": null,
+              "duration": 199,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  url: 'https://api.spacex.land/graphql/',\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    query: _queries.update_users\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.update_users.affected_rows).to.eq(1);\n  expect(response.body.data.update_users.returning[0].id).to.eq(\"77777774-f4b7-44e2-9bbc-4af09a81b57b\");\n  expect(response.body.data.update_users.returning[0].name).to.eq(\"Nome 006ALT\");\n  expect(response.body.data.update_users.returning[0].rocket).to.eq(\"Foguete 006ALT\");\n  expect(response.body.data.update_users.returning[0].timestamp).to.is.not.null;\n  expect(response.body.data.update_users.returning[0].twitter).to.eq(\"@N006ALT\");\n});",
+              "err": {},
+              "uuid": "3058756d-e475-4d07-8779-4909893e7b5e",
+              "parentUUID": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Excluir Usuário",
+              "fullTitle": "Endpoint Users SpaceX Excluir Usuário",
+              "timedOut": null,
+              "duration": 214,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  url: 'https://api.spacex.land/graphql/',\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: {\n    query: _queries.delete_users\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.data.delete_users.affected_rows).to.eq(1);\n  expect(response.body.data.delete_users.returning[0].id).to.eq(\"77777774-f4b7-44e2-9bbc-4af09a81b57b\");\n  expect(response.body.data.delete_users.returning[0].name).to.eq(\"Nome 006ALT\");\n  expect(response.body.data.delete_users.returning[0].rocket).to.eq(\"Foguete 006ALT\");\n  expect(response.body.data.delete_users.returning[0].twitter).to.eq(\"@N006ALT\");\n});",
+              "err": {},
+              "uuid": "89370f7c-d731-42d8-ac2e-6824ce5e1754",
+              "parentUUID": "a1c81c0a-52c8-4159-b2f0-28673b2f69c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "57c9285c-5b7f-439f-abcf-32d6170e2603",
+            "f8f28425-cc6a-49ae-a6fd-075bca078a35",
+            "3058756d-e475-4d07-8779-4909893e7b5e",
+            "89370f7c-d731-42d8-ac2e-6824ce5e1754"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1318,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
