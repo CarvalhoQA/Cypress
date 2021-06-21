@@ -22,6 +22,6 @@ export const query_character =
           episode{
             id
             name
-        }
+          }
     }
 }`
