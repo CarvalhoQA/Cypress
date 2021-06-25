@@ -25,6 +25,3 @@ Github Actios --- Verificar aba actions do github
 Implementar um report com o framework da sua escolha = Sucesso
 
 Local: mochawesome-report/mochawesome-report.html
-
-
-Desafio Concluído \o/
